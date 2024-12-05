@@ -7,13 +7,23 @@ Gerenciador simplificado de scripts de terceiros usando Web Workers. Otimize o c
 
 ## Instalação
 
+### NPM
+
 ```bash
 npm install thread-zepplin
 ```
 
+### CDN
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/thread-zepplin@1.1.0/src/cdn.js"></script>
+```
+
 ## Como Usar
 
-### Forma Simples (apenas GTM)
+### Via NPM
+
+#### Forma Simples (apenas GTM)
 
 ```javascript
 import { tz } from 'thread-zepplin';
@@ -22,7 +32,7 @@ const scripts = new tz();
 scripts.load('GTM-XXXXXXX');
 ```
 
-### Múltiplos Scripts
+#### Múltiplos Scripts
 
 ```javascript
 import { tz } from 'thread-zepplin';
@@ -37,6 +47,27 @@ scripts.load({
 });
 ```
 
+### Via CDN
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/thread-zepplin@1.1.0/src/cdn.js"></script>
+<script>
+  const threadZepplin = new ThreadZepplin();
+  
+  // Forma simples (apenas GTM)
+  threadZepplin.load('GTM-XXXXXXX');
+  
+  // Ou múltiplos scripts
+  threadZepplin.load({
+    gtm: 'GTM-XXXXXXX',
+    rd: 'seu-id-rd-station',
+    linkedin: 'seu-id-linkedin',
+    leadster: 'seu-id-leadster',
+    meta: 'seu-pixel-id' // Facebook Pixel
+  });
+</script>
+```
+
 ## Benefícios
 
 - 🚀 Carregamento otimizado usando Web Workers
@@ -44,6 +75,7 @@ scripts.load({
 - 🔄 Carregamento assíncrono
 - 🛡️ Isolamento de scripts de terceiros
 - 📦 Sem dependências externas
+- 🌐 Múltiplas opções de integração (NPM ou CDN)
 
 ## Scripts Suportados
 
@@ -55,7 +87,7 @@ scripts.load({
 
 ## Como Contribuir
 
-Sinta-se à vontade para contribuir! Confira nosso [Guia de Contribuição](CONTRIBUTING.md) para mais detalhes.
+Sinta-se à vontade para contribuir! Confira nosso [Guia de Contribuição](CONTRIBUTING.pt-BR.md) para mais detalhes.
 
 ## Licença
 
