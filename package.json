@@ -1,6 +1,6 @@
 {
   "name": "thread-zepplin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A JavaScript library for efficiently managing multiple tracking scripts using Web Workers",
   "main": "src/index.js",
   "type": "module",
@@ -20,7 +20,8 @@
     "leadster",
     "meta",
     "facebook-pixel",
-    "web-workers"
+    "web-workers",
+    "cdn"
   ],
   "author": {
     "name": "Victor M. Benazzi",
