@@ -1,12 +1,42 @@
 {
   "name": "thread-zepplin",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A JavaScript library for efficiently managing multiple tracking scripts using Web Workers",
+  "main": "src/index.js",
+  "type": "module",
+  "files": [
+    "src"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "keywords": [
+    "analytics",
+    "tracking",
+    "gtm",
+    "google-tag-manager",
+    "rdstation",
+    "linkedin",
+    "leadster",
+    "meta",
+    "facebook-pixel",
+    "web-workers"
+  ],
+  "author": {
+    "name": "Victor M. Benazzi",
+    "email": "victorbenazzi@gmail.com",
+    "url": "https://github.com/victorbenazzi"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorbenazzi/thread-zepplin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/victorbenazzi/thread-zepplin/issues"
+  },
+  "homepage": "https://github.com/victorbenazzi/thread-zepplin#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }
