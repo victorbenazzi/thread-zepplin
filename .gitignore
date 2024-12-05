@@ -1,0 +1,52 @@
+# Dependências
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs
+*.log
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs e editores
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# Arquivos de build/distribuição
+dist/
+build/
+coverage/
+
+# Cache
+.npm
+.eslintcache
+.cache
+
+# Arquivos temporários
+*.tmp
+*.temp
+.tmp/
+temp/
+
+# Arquivos de teste
+coverage/
+.nyc_output/
+
+# Outros
+*.pid
+*.seed
+*.pid.lock 
